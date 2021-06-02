@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-ViapiiOSSDKDemo/Pods-ViapiiOSSDKDemo-resources.sh
+${PODS_ROOT}/AMLeaksFinder/AMLeaksFinder/UI/AMMemoryLeakView.xib
+${PODS_ROOT}/AMLeaksFinder/AMLeaksFinder/AMLeaksFinder.bundle
+${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle

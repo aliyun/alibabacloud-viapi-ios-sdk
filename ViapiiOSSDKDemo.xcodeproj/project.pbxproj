@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		056E0BA52653A95200FF8A7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 056E0BA42653A95200FF8A7A /* AppDelegate.m */; };
+		056E0BA82653A95200FF8A7A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 056E0BA72653A95200FF8A7A /* SceneDelegate.m */; };
+		056E0BAB2653A95200FF8A7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056E0BAA2653A95200FF8A7A /* ViewController.m */; };
+		056E0BAE2653A95200FF8A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056E0BAC2653A95200FF8A7A /* Main.storyboard */; };
+		056E0BB02653A95200FF8A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056E0BAF2653A95200FF8A7A /* Assets.xcassets */; };
+		056E0BB32653A95200FF8A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056E0BB12653A95200FF8A7A /* LaunchScreen.storyboard */; };
+		056E0BB62653A95200FF8A7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 056E0BB52653A95200FF8A7A /* main.m */; };
+		056E0BC02653A95200FF8A7A /* ViapiiOSSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056E0BBF2653A95200FF8A7A /* ViapiiOSSDKDemoTests.m */; };
+		056E0BCB2653A95200FF8A7A /* ViapiiOSSDKDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056E0BCA2653A95200FF8A7A /* ViapiiOSSDKDemoUITests.m */; };
+		056E0BE62653AA3600FF8A7A /* segHumans.nn in Resources */ = {isa = PBXBuildFile; fileRef = 056E0BDD2653AA3600FF8A7A /* segHumans.nn */; };
+		056E0BE72653AA3600FF8A7A /* segHuman.nn in Resources */ = {isa = PBXBuildFile; fileRef = 056E0BDE2653AA3600FF8A7A /* segHuman.nn */; };
+		056E0BE82653AA3600FF8A7A /* segvHuman.nn in Resources */ = {isa = PBXBuildFile; fileRef = 056E0BE02653AA3600FF8A7A /* segvHuman.nn */; };
+		056E0BFF2653AA6400FF8A7A /* VideoFrameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E0BED2653AA6400FF8A7A /* VideoFrameGenerator.swift */; };
+		056E0C002653AA6400FF8A7A /* ImageCompositer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E0BEE2653AA6400FF8A7A /* ImageCompositer.swift */; };
+		056E0C012653AA6400FF8A7A /* PixelArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E0BEF2653AA6400FF8A7A /* PixelArray.swift */; };
+		056E0C022653AA6400FF8A7A /* ImageRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E0BF02653AA6400FF8A7A /* ImageRender.swift */; };
+		056E0C032653AA6400FF8A7A /* DamoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E0BF22653AA6400FF8A7A /* DamoPageView.swift */; };
+		056E0C042653AA6400FF8A7A /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E0BF32653AA6400FF8A7A /* PreviewView.swift */; };
+		056E0C052653AA6400FF8A7A /* WriteImageController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 056E0BF52653AA6400FF8A7A /* WriteImageController.mm */; };
+		056E0C082653AA6400FF8A7A /* a.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 056E0BFB2653AA6400FF8A7A /* a.mp4 */; };
+		056E0C092653AA6400FF8A7A /* b.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 056E0BFC2653AA6400FF8A7A /* b.mp4 */; };
+		056E0C0A2653AA6400FF8A7A /* c.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 056E0BFD2653AA6400FF8A7A /* c.mp4 */; };
+		056E0C0B2653AA6400FF8A7A /* d.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 056E0BFE2653AA6400FF8A7A /* d.mp4 */; };
+		056E0C112653AA7700FF8A7A /* PhotoSegmentViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 056E0C0E2653AA7700FF8A7A /* PhotoSegmentViewController.mm */; };
+		056E0C132653AB2700FF8A7A /* MNN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056E0C122653AB2700FF8A7A /* MNN.framework */; };
+		056E0C172653CCF500FF8A7A /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E0C162653CCF500FF8A7A /* VideoCapture.swift */; };
+		056E0CD6265B9A6300FF8A7A /* LocalVideoAvPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 056E0CD2265B9A6200FF8A7A /* LocalVideoAvPlayerView.m */; };
+		056E0CD7265B9A6300FF8A7A /* LocalVideoSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056E0CD5265B9A6200FF8A7A /* LocalVideoSegmentViewController.m */; };
+		056E0CDB265BA1D300FF8A7A /* SegmentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E0CDA265BA1D300FF8A7A /* SegmentationViewController.swift */; };
+		22C38E1EE9CF3E620A7BC3E2 /* libPods-ViapiiOSSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2712A51FBE357F27E9B47E /* libPods-ViapiiOSSDKDemo.a */; };
+		AEE22E8B2654CB230081F063 /* ViapiIosSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE22E8A2654CB230081F063 /* ViapiIosSDK.framework */; };
+		AEE22F24265BA98F0081F063 /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AEE22F22265BA98F0081F063 /* images.bundle */; };
+		AEE22F25265BA98F0081F063 /* ViProgressHub.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE22F23265BA98F0081F063 /* ViProgressHub.m */; };
+		AEE22F28265C9DEC0081F063 /* LocalVideoCompositeVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE22F27265C9DEC0081F063 /* LocalVideoCompositeVideoViewController.m */; };
+		AEE22F2C265CF1A80081F063 /* damo-viapi.license in Resources */ = {isa = PBXBuildFile; fileRef = AEE22F2B265CF1A80081F063 /* damo-viapi.license */; };
+		AEE22F31265DE34D0081F063 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE22F2F265DE34D0081F063 /* Tool.m */; };
+		AEE22F34265E1EBD0081F063 /* UIImage+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE22F33265E1EBD0081F063 /* UIImage+Compression.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		056E0BBC2653A95200FF8A7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 056E0B982653A95200FF8A7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 056E0B9F2653A95200FF8A7A;
+			remoteInfo = ViapiiOSSDKDemo;
+		};
+		056E0BC72653A95200FF8A7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 056E0B982653A95200FF8A7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 056E0B9F2653A95200FF8A7A;
+			remoteInfo = ViapiiOSSDKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		056E0BA02653A95200FF8A7A /* ViapiiOSSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViapiiOSSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		056E0BA32653A95200FF8A7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		056E0BA42653A95200FF8A7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		056E0BA62653A95200FF8A7A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		056E0BA72653A95200FF8A7A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		056E0BA92653A95200FF8A7A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		056E0BAA2653A95200FF8A7A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		056E0BAD2653A95200FF8A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		056E0BAF2653A95200FF8A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		056E0BB22653A95200FF8A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		056E0BB42653A95200FF8A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056E0BB52653A95200FF8A7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		056E0BBB2653A95200FF8A7A /* ViapiiOSSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViapiiOSSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		056E0BBF2653A95200FF8A7A /* ViapiiOSSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViapiiOSSDKDemoTests.m; sourceTree = "<group>"; };
+		056E0BC12653A95200FF8A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056E0BC62653A95200FF8A7A /* ViapiiOSSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViapiiOSSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		056E0BCA2653A95200FF8A7A /* ViapiiOSSDKDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViapiiOSSDKDemoUITests.m; sourceTree = "<group>"; };
+		056E0BCC2653A95200FF8A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056E0BD82653A97200FF8A7A /* ViapiiOSSDKDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViapiiOSSDKDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		056E0BDD2653AA3600FF8A7A /* segHumans.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = segHumans.nn; sourceTree = "<group>"; };
+		056E0BDE2653AA3600FF8A7A /* segHuman.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = segHuman.nn; sourceTree = "<group>"; };
+		056E0BE02653AA3600FF8A7A /* segvHuman.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = segvHuman.nn; sourceTree = "<group>"; };
+		056E0BED2653AA6400FF8A7A /* VideoFrameGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoFrameGenerator.swift; sourceTree = "<group>"; };
+		056E0BEE2653AA6400FF8A7A /* ImageCompositer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCompositer.swift; sourceTree = "<group>"; };
+		056E0BEF2653AA6400FF8A7A /* PixelArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelArray.swift; sourceTree = "<group>"; };
+		056E0BF02653AA6400FF8A7A /* ImageRender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRender.swift; sourceTree = "<group>"; };
+		056E0BF22653AA6400FF8A7A /* DamoPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamoPageView.swift; sourceTree = "<group>"; };
+		056E0BF32653AA6400FF8A7A /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		056E0BF42653AA6400FF8A7A /* WriteImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteImageController.h; sourceTree = "<group>"; };
+		056E0BF52653AA6400FF8A7A /* WriteImageController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WriteImageController.mm; sourceTree = "<group>"; };
+		056E0BFB2653AA6400FF8A7A /* a.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.mp4; sourceTree = "<group>"; };
+		056E0BFC2653AA6400FF8A7A /* b.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = b.mp4; sourceTree = "<group>"; };
+		056E0BFD2653AA6400FF8A7A /* c.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = c.mp4; sourceTree = "<group>"; };
+		056E0BFE2653AA6400FF8A7A /* d.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = d.mp4; sourceTree = "<group>"; };
+		056E0C0E2653AA7700FF8A7A /* PhotoSegmentViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PhotoSegmentViewController.mm; sourceTree = "<group>"; };
+		056E0C0F2653AA7700FF8A7A /* PhotoSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSegmentViewController.h; sourceTree = "<group>"; };
+		056E0C122653AB2700FF8A7A /* MNN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MNN.framework; sourceTree = "<group>"; };
+		056E0C162653CCF500FF8A7A /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		056E0CD1265B9A6200FF8A7A /* LocalVideoAvPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalVideoAvPlayerView.h; sourceTree = "<group>"; };
+		056E0CD2265B9A6200FF8A7A /* LocalVideoAvPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalVideoAvPlayerView.m; sourceTree = "<group>"; };
+		056E0CD4265B9A6200FF8A7A /* LocalVideoSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalVideoSegmentViewController.h; sourceTree = "<group>"; };
+		056E0CD5265B9A6200FF8A7A /* LocalVideoSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalVideoSegmentViewController.m; sourceTree = "<group>"; };
+		056E0CD8265B9B2000FF8A7A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		056E0CD9265B9B3000FF8A7A /* MacroTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroTool.h; sourceTree = "<group>"; };
+		056E0CDA265BA1D300FF8A7A /* SegmentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentationViewController.swift; sourceTree = "<group>"; };
+		3E2712A51FBE357F27E9B47E /* libPods-ViapiiOSSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViapiiOSSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		496A3533A887D475A83AD5CD /* Pods-ViapiiOSSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViapiiOSSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-ViapiiOSSDKDemo/Pods-ViapiiOSSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AEE22E8A2654CB230081F063 /* ViapiIosSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ViapiIosSDK.framework; sourceTree = "<group>"; };
+		AEE22F21265BA98F0081F063 /* ViProgressHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViProgressHub.h; sourceTree = "<group>"; };
+		AEE22F22265BA98F0081F063 /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
+		AEE22F23265BA98F0081F063 /* ViProgressHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViProgressHub.m; sourceTree = "<group>"; };
+		AEE22F26265C9DEC0081F063 /* LocalVideoCompositeVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalVideoCompositeVideoViewController.h; sourceTree = "<group>"; };
+		AEE22F27265C9DEC0081F063 /* LocalVideoCompositeVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalVideoCompositeVideoViewController.m; sourceTree = "<group>"; };
+		AEE22F2B265CF1A80081F063 /* damo-viapi.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = "damo-viapi.license"; sourceTree = "<group>"; };
+		AEE22F2F265DE34D0081F063 /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		AEE22F30265DE34D0081F063 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		AEE22F32265E1EBD0081F063 /* UIImage+Compression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compression.h"; sourceTree = "<group>"; };
+		AEE22F33265E1EBD0081F063 /* UIImage+Compression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compression.m"; sourceTree = "<group>"; };
+		C0472027A093797D88F3D081 /* Pods-ViapiiOSSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViapiiOSSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-ViapiiOSSDKDemo/Pods-ViapiiOSSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		056E0B9D2653A95200FF8A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056E0C132653AB2700FF8A7A /* MNN.framework in Frameworks */,
+				22C38E1EE9CF3E620A7BC3E2 /* libPods-ViapiiOSSDKDemo.a in Frameworks */,
+				AEE22E8B2654CB230081F063 /* ViapiIosSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056E0BB82653A95200FF8A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056E0BC32653A95200FF8A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		056E0B972653A95200FF8A7A = {
+			isa = PBXGroup;
+			children = (
+				056E0BA22653A95200FF8A7A /* ViapiiOSSDKDemo */,
+				056E0BBE2653A95200FF8A7A /* ViapiiOSSDKDemoTests */,
+				056E0BC92653A95200FF8A7A /* ViapiiOSSDKDemoUITests */,
+				056E0BA12653A95200FF8A7A /* Products */,
+				699418A0B5296911E0DDE5CD /* Pods */,
+				CF6BF164B8B821EA6CDB6C30 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		056E0BA12653A95200FF8A7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				056E0BA02653A95200FF8A7A /* ViapiiOSSDKDemo.app */,
+				056E0BBB2653A95200FF8A7A /* ViapiiOSSDKDemoTests.xctest */,
+				056E0BC62653A95200FF8A7A /* ViapiiOSSDKDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		056E0BA22653A95200FF8A7A /* ViapiiOSSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AEE22F1C265BA5A20081F063 /* Tools */,
+				056E0BE32653AA3600FF8A7A /* libs */,
+				056E0BE12653AA3600FF8A7A /* license */,
+				056E0BDB2653AA3600FF8A7A /* models */,
+				056E0BA32653A95200FF8A7A /* AppDelegate.h */,
+				056E0BA42653A95200FF8A7A /* AppDelegate.m */,
+				056E0BA62653A95200FF8A7A /* SceneDelegate.h */,
+				056E0BA72653A95200FF8A7A /* SceneDelegate.m */,
+				056E0BA92653A95200FF8A7A /* ViewController.h */,
+				056E0BAA2653A95200FF8A7A /* ViewController.m */,
+				056E0C0F2653AA7700FF8A7A /* PhotoSegmentViewController.h */,
+				056E0C0E2653AA7700FF8A7A /* PhotoSegmentViewController.mm */,
+				056E0CD8265B9B2000FF8A7A /* PrefixHeader.pch */,
+				056E0CDA265BA1D300FF8A7A /* SegmentationViewController.swift */,
+				056E0CD9265B9B3000FF8A7A /* MacroTool.h */,
+				056E0CCF265B9A6200FF8A7A /* LocalVideo */,
+				056E0BF62653AA6400FF8A7A /* Camera */,
+				056E0BEC2653AA6400FF8A7A /* Internal */,
+				056E0BFA2653AA6400FF8A7A /* Resource */,
+				056E0BF12653AA6400FF8A7A /* UI */,
+				056E0BAC2653A95200FF8A7A /* Main.storyboard */,
+				056E0BAF2653A95200FF8A7A /* Assets.xcassets */,
+				056E0BB12653A95200FF8A7A /* LaunchScreen.storyboard */,
+				056E0BB42653A95200FF8A7A /* Info.plist */,
+				056E0BB52653A95200FF8A7A /* main.m */,
+				056E0BD82653A97200FF8A7A /* ViapiiOSSDKDemo-Bridging-Header.h */,
+			);
+			path = ViapiiOSSDKDemo;
+			sourceTree = "<group>";
+		};
+		056E0BBE2653A95200FF8A7A /* ViapiiOSSDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				056E0BBF2653A95200FF8A7A /* ViapiiOSSDKDemoTests.m */,
+				056E0BC12653A95200FF8A7A /* Info.plist */,
+			);
+			path = ViapiiOSSDKDemoTests;
+			sourceTree = "<group>";
+		};
+		056E0BC92653A95200FF8A7A /* ViapiiOSSDKDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				056E0BCA2653A95200FF8A7A /* ViapiiOSSDKDemoUITests.m */,
+				056E0BCC2653A95200FF8A7A /* Info.plist */,
+			);
+			path = ViapiiOSSDKDemoUITests;
+			sourceTree = "<group>";
+		};
+		056E0BDB2653AA3600FF8A7A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				056E0BDC2653AA3600FF8A7A /* photo_seg */,
+				056E0BDF2653AA3600FF8A7A /* video_seg */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		056E0BDC2653AA3600FF8A7A /* photo_seg */ = {
+			isa = PBXGroup;
+			children = (
+				056E0BDD2653AA3600FF8A7A /* segHumans.nn */,
+				056E0BDE2653AA3600FF8A7A /* segHuman.nn */,
+			);
+			path = photo_seg;
+			sourceTree = "<group>";
+		};
+		056E0BDF2653AA3600FF8A7A /* video_seg */ = {
+			isa = PBXGroup;
+			children = (
+				056E0BE02653AA3600FF8A7A /* segvHuman.nn */,
+			);
+			path = video_seg;
+			sourceTree = "<group>";
+		};
+		056E0BE12653AA3600FF8A7A /* license */ = {
+			isa = PBXGroup;
+			children = (
+				AEE22F2B265CF1A80081F063 /* damo-viapi.license */,
+			);
+			path = license;
+			sourceTree = "<group>";
+		};
+		056E0BE32653AA3600FF8A7A /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				AEE22E8A2654CB230081F063 /* ViapiIosSDK.framework */,
+				056E0C122653AB2700FF8A7A /* MNN.framework */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		056E0BEC2653AA6400FF8A7A /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				056E0BED2653AA6400FF8A7A /* VideoFrameGenerator.swift */,
+				056E0BEE2653AA6400FF8A7A /* ImageCompositer.swift */,
+				056E0BEF2653AA6400FF8A7A /* PixelArray.swift */,
+				056E0BF02653AA6400FF8A7A /* ImageRender.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		056E0BF12653AA6400FF8A7A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				056E0BF22653AA6400FF8A7A /* DamoPageView.swift */,
+				056E0BF32653AA6400FF8A7A /* PreviewView.swift */,
+				056E0BF42653AA6400FF8A7A /* WriteImageController.h */,
+				056E0BF52653AA6400FF8A7A /* WriteImageController.mm */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		056E0BF62653AA6400FF8A7A /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				056E0C162653CCF500FF8A7A /* VideoCapture.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		056E0BFA2653AA6400FF8A7A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				056E0BFB2653AA6400FF8A7A /* a.mp4 */,
+				056E0BFC2653AA6400FF8A7A /* b.mp4 */,
+				056E0BFD2653AA6400FF8A7A /* c.mp4 */,
+				056E0BFE2653AA6400FF8A7A /* d.mp4 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		056E0CCF265B9A6200FF8A7A /* LocalVideo */ = {
+			isa = PBXGroup;
+			children = (
+				056E0CD0265B9A6200FF8A7A /* LocalVideoView */,
+				056E0CD3265B9A6200FF8A7A /* LocalVideoVC */,
+			);
+			path = LocalVideo;
+			sourceTree = "<group>";
+		};
+		056E0CD0265B9A6200FF8A7A /* LocalVideoView */ = {
+			isa = PBXGroup;
+			children = (
+				056E0CD1265B9A6200FF8A7A /* LocalVideoAvPlayerView.h */,
+				056E0CD2265B9A6200FF8A7A /* LocalVideoAvPlayerView.m */,
+			);
+			path = LocalVideoView;
+			sourceTree = "<group>";
+		};
+		056E0CD3265B9A6200FF8A7A /* LocalVideoVC */ = {
+			isa = PBXGroup;
+			children = (
+				056E0CD4265B9A6200FF8A7A /* LocalVideoSegmentViewController.h */,
+				056E0CD5265B9A6200FF8A7A /* LocalVideoSegmentViewController.m */,
+				AEE22F26265C9DEC0081F063 /* LocalVideoCompositeVideoViewController.h */,
+				AEE22F27265C9DEC0081F063 /* LocalVideoCompositeVideoViewController.m */,
+			);
+			path = LocalVideoVC;
+			sourceTree = "<group>";
+		};
+		699418A0B5296911E0DDE5CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				496A3533A887D475A83AD5CD /* Pods-ViapiiOSSDKDemo.debug.xcconfig */,
+				C0472027A093797D88F3D081 /* Pods-ViapiiOSSDKDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AEE22F1C265BA5A20081F063 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				AEE22F30265DE34D0081F063 /* Tool.h */,
+				AEE22F2F265DE34D0081F063 /* Tool.m */,
+				AEE22F32265E1EBD0081F063 /* UIImage+Compression.h */,
+				AEE22F33265E1EBD0081F063 /* UIImage+Compression.m */,
+				AEE22F1D265BA61D0081F063 /* ViProgressHub */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		AEE22F1D265BA61D0081F063 /* ViProgressHub */ = {
+			isa = PBXGroup;
+			children = (
+				AEE22F22265BA98F0081F063 /* images.bundle */,
+				AEE22F21265BA98F0081F063 /* ViProgressHub.h */,
+				AEE22F23265BA98F0081F063 /* ViProgressHub.m */,
+			);
+			path = ViProgressHub;
+			sourceTree = "<group>";
+		};
+		CF6BF164B8B821EA6CDB6C30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E2712A51FBE357F27E9B47E /* libPods-ViapiiOSSDKDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		056E0B9F2653A95200FF8A7A /* ViapiiOSSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 056E0BCF2653A95200FF8A7A /* Build configuration list for PBXNativeTarget "ViapiiOSSDKDemo" */;
+			buildPhases = (
+				50A7979DCA52A24541E97876 /* [CP] Check Pods Manifest.lock */,
+				056E0B9C2653A95200FF8A7A /* Sources */,
+				056E0B9D2653A95200FF8A7A /* Frameworks */,
+				056E0B9E2653A95200FF8A7A /* Resources */,
+				E7AC8F1C2AB7DE8233BBC1E7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViapiiOSSDKDemo;
+			productName = ViapiiOSSDKDemo;
+			productReference = 056E0BA02653A95200FF8A7A /* ViapiiOSSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		056E0BBA2653A95200FF8A7A /* ViapiiOSSDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 056E0BD22653A95200FF8A7A /* Build configuration list for PBXNativeTarget "ViapiiOSSDKDemoTests" */;
+			buildPhases = (
+				056E0BB72653A95200FF8A7A /* Sources */,
+				056E0BB82653A95200FF8A7A /* Frameworks */,
+				056E0BB92653A95200FF8A7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				056E0BBD2653A95200FF8A7A /* PBXTargetDependency */,
+			);
+			name = ViapiiOSSDKDemoTests;
+			productName = ViapiiOSSDKDemoTests;
+			productReference = 056E0BBB2653A95200FF8A7A /* ViapiiOSSDKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		056E0BC52653A95200FF8A7A /* ViapiiOSSDKDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 056E0BD52653A95200FF8A7A /* Build configuration list for PBXNativeTarget "ViapiiOSSDKDemoUITests" */;
+			buildPhases = (
+				056E0BC22653A95200FF8A7A /* Sources */,
+				056E0BC32653A95200FF8A7A /* Frameworks */,
+				056E0BC42653A95200FF8A7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				056E0BC82653A95200FF8A7A /* PBXTargetDependency */,
+			);
+			name = ViapiiOSSDKDemoUITests;
+			productName = ViapiiOSSDKDemoUITests;
+			productReference = 056E0BC62653A95200FF8A7A /* ViapiiOSSDKDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		056E0B982653A95200FF8A7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					056E0B9F2653A95200FF8A7A = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+					056E0BBA2653A95200FF8A7A = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 056E0B9F2653A95200FF8A7A;
+					};
+					056E0BC52653A95200FF8A7A = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 056E0B9F2653A95200FF8A7A;
+					};
+				};
+			};
+			buildConfigurationList = 056E0B9B2653A95200FF8A7A /* Build configuration list for PBXProject "ViapiiOSSDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 056E0B972653A95200FF8A7A;
+			productRefGroup = 056E0BA12653A95200FF8A7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				056E0B9F2653A95200FF8A7A /* ViapiiOSSDKDemo */,
+				056E0BBA2653A95200FF8A7A /* ViapiiOSSDKDemoTests */,
+				056E0BC52653A95200FF8A7A /* ViapiiOSSDKDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		056E0B9E2653A95200FF8A7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056E0C0B2653AA6400FF8A7A /* d.mp4 in Resources */,
+				056E0BB32653A95200FF8A7A /* LaunchScreen.storyboard in Resources */,
+				AEE22F2C265CF1A80081F063 /* damo-viapi.license in Resources */,
+				056E0BE62653AA3600FF8A7A /* segHumans.nn in Resources */,
+				056E0BB02653A95200FF8A7A /* Assets.xcassets in Resources */,
+				056E0C092653AA6400FF8A7A /* b.mp4 in Resources */,
+				056E0BE72653AA3600FF8A7A /* segHuman.nn in Resources */,
+				AEE22F24265BA98F0081F063 /* images.bundle in Resources */,
+				056E0BE82653AA3600FF8A7A /* segvHuman.nn in Resources */,
+				056E0C082653AA6400FF8A7A /* a.mp4 in Resources */,
+				056E0C0A2653AA6400FF8A7A /* c.mp4 in Resources */,
+				056E0BAE2653A95200FF8A7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056E0BB92653A95200FF8A7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056E0BC42653A95200FF8A7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50A7979DCA52A24541E97876 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViapiiOSSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7AC8F1C2AB7DE8233BBC1E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViapiiOSSDKDemo/Pods-ViapiiOSSDKDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViapiiOSSDKDemo/Pods-ViapiiOSSDKDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViapiiOSSDKDemo/Pods-ViapiiOSSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		056E0B9C2653A95200FF8A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056E0CDB265BA1D300FF8A7A /* SegmentationViewController.swift in Sources */,
+				056E0C112653AA7700FF8A7A /* PhotoSegmentViewController.mm in Sources */,
+				056E0C172653CCF500FF8A7A /* VideoCapture.swift in Sources */,
+				056E0C002653AA6400FF8A7A /* ImageCompositer.swift in Sources */,
+				056E0C052653AA6400FF8A7A /* WriteImageController.mm in Sources */,
+				056E0BFF2653AA6400FF8A7A /* VideoFrameGenerator.swift in Sources */,
+				AEE22F31265DE34D0081F063 /* Tool.m in Sources */,
+				056E0CD7265B9A6300FF8A7A /* LocalVideoSegmentViewController.m in Sources */,
+				056E0C042653AA6400FF8A7A /* PreviewView.swift in Sources */,
+				AEE22F28265C9DEC0081F063 /* LocalVideoCompositeVideoViewController.m in Sources */,
+				AEE22F34265E1EBD0081F063 /* UIImage+Compression.m in Sources */,
+				056E0CD6265B9A6300FF8A7A /* LocalVideoAvPlayerView.m in Sources */,
+				056E0BAB2653A95200FF8A7A /* ViewController.m in Sources */,
+				056E0C012653AA6400FF8A7A /* PixelArray.swift in Sources */,
+				056E0BA52653A95200FF8A7A /* AppDelegate.m in Sources */,
+				056E0BB62653A95200FF8A7A /* main.m in Sources */,
+				056E0BA82653A95200FF8A7A /* SceneDelegate.m in Sources */,
+				056E0C032653AA6400FF8A7A /* DamoPageView.swift in Sources */,
+				AEE22F25265BA98F0081F063 /* ViProgressHub.m in Sources */,
+				056E0C022653AA6400FF8A7A /* ImageRender.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056E0BB72653A95200FF8A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056E0BC02653A95200FF8A7A /* ViapiiOSSDKDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056E0BC22653A95200FF8A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056E0BCB2653A95200FF8A7A /* ViapiiOSSDKDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		056E0BBD2653A95200FF8A7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 056E0B9F2653A95200FF8A7A /* ViapiiOSSDKDemo */;
+			targetProxy = 056E0BBC2653A95200FF8A7A /* PBXContainerItemProxy */;
+		};
+		056E0BC82653A95200FF8A7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 056E0B9F2653A95200FF8A7A /* ViapiiOSSDKDemo */;
+			targetProxy = 056E0BC72653A95200FF8A7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		056E0BAC2653A95200FF8A7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				056E0BAD2653A95200FF8A7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		056E0BB12653A95200FF8A7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				056E0BB22653A95200FF8A7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		056E0BCD2653A95200FF8A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		056E0BCE2653A95200FF8A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		056E0BD02653A95200FF8A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 496A3533A887D475A83AD5CD /* Pods-ViapiiOSSDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P2XVS542GV;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ViapiiOSSDKDemo/libs",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ViapiiOSSDKDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = ViapiiOSSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliyun.ai.viapi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ViapiiOSSDKDemo/ViapiiOSSDKDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		056E0BD12653A95200FF8A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0472027A093797D88F3D081 /* Pods-ViapiiOSSDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P2XVS542GV;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ViapiiOSSDKDemo/libs",
+				);
+				INFOPLIST_FILE = ViapiiOSSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliyun.ai.viapi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ViapiiOSSDKDemo/ViapiiOSSDKDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		056E0BD32653A95200FF8A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ML2LL37LH3;
+				INFOPLIST_FILE = ViapiiOSSDKDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dididi.ViapiiOSSDKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViapiiOSSDKDemo.app/ViapiiOSSDKDemo";
+			};
+			name = Debug;
+		};
+		056E0BD42653A95200FF8A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ML2LL37LH3;
+				INFOPLIST_FILE = ViapiiOSSDKDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dididi.ViapiiOSSDKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViapiiOSSDKDemo.app/ViapiiOSSDKDemo";
+			};
+			name = Release;
+		};
+		056E0BD62653A95200FF8A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ML2LL37LH3;
+				INFOPLIST_FILE = ViapiiOSSDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dididi.ViapiiOSSDKDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ViapiiOSSDKDemo;
+			};
+			name = Debug;
+		};
+		056E0BD72653A95200FF8A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ML2LL37LH3;
+				INFOPLIST_FILE = ViapiiOSSDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dididi.ViapiiOSSDKDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ViapiiOSSDKDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		056E0B9B2653A95200FF8A7A /* Build configuration list for PBXProject "ViapiiOSSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056E0BCD2653A95200FF8A7A /* Debug */,
+				056E0BCE2653A95200FF8A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		056E0BCF2653A95200FF8A7A /* Build configuration list for PBXNativeTarget "ViapiiOSSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056E0BD02653A95200FF8A7A /* Debug */,
+				056E0BD12653A95200FF8A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		056E0BD22653A95200FF8A7A /* Build configuration list for PBXNativeTarget "ViapiiOSSDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056E0BD32653A95200FF8A7A /* Debug */,
+				056E0BD42653A95200FF8A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		056E0BD52653A95200FF8A7A /* Build configuration list for PBXNativeTarget "ViapiiOSSDKDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056E0BD62653A95200FF8A7A /* Debug */,
+				056E0BD72653A95200FF8A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 056E0B982653A95200FF8A7A /* Project object */;
+}

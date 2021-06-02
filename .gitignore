@@ -1,0 +1,7 @@
+*.iml
+.idea
+.DS_Store
+Pods/Pods.xcodeproj/xcuserdata
+*/xcuserdata/*
+*.xcuserstate
+ViapiiOSSDKDemo/license

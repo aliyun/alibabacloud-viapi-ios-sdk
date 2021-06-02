@@ -1,0 +1,6 @@
+framework module ViapiIosSDK {
+  umbrella header "ViapiIosSDK.h"
+
+  export *
+  module * { export * }
+}

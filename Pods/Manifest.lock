@@ -1,0 +1,34 @@
+PODS:
+  - AMLeaksFinder (2.1.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - TZImagePickerController (3.6.0)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+
+DEPENDENCIES:
+  - AMLeaksFinder (~> 2.1.0)
+  - Masonry (= 1.1.0)
+  - MBProgressHUD (~> 1.2.0)
+  - TZImagePickerController
+  - YYCategories (~> 1.0.4)
+
+SPEC REPOS:
+  trunk:
+    - AMLeaksFinder
+    - Masonry
+    - MBProgressHUD
+    - TZImagePickerController
+    - YYCategories
+
+SPEC CHECKSUMS:
+  AMLeaksFinder: 540a1a72e70c68631c6ea85cb6d2a0c8abf90412
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  TZImagePickerController: a37d7eec87c54436e896a67947033ad2178d498b
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+
+PODFILE CHECKSUM: c8476a17ca7a53f64abef87c949b57d9512cb4c2
+
+COCOAPODS: 1.10.1
